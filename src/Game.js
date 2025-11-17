@@ -56,3 +56,8 @@ export const TicTacToe = {
     }
   },
 };
+
+// CommonJS export for Node.js server
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = { TicTacToe };
+}
